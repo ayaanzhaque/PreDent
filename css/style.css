@@ -4623,7 +4623,7 @@ button.close {
   .bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before {
     bottom: 0;
     border-top-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-top .arrow::after,
   .bs-popover-auto[x-placement^="top"] .arrow::after {
     bottom: 1px;
@@ -4643,7 +4643,7 @@ button.close {
   .bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before {
     left: 0;
     border-right-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-right .arrow::after,
   .bs-popover-auto[x-placement^="right"] .arrow::after {
     left: 1px;
@@ -4660,7 +4660,7 @@ button.close {
   .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before {
     top: 0;
     border-bottom-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-bottom .arrow::after,
   .bs-popover-auto[x-placement^="bottom"] .arrow::after {
     top: 1px;
@@ -4689,7 +4689,7 @@ button.close {
   .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before {
     right: 0;
     border-left-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-left .arrow::after,
   .bs-popover-auto[x-placement^="left"] .arrow::after {
     right: 1px;
@@ -8951,3 +8951,95 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+    .accordion > .card {
+      overflow: hidden; }
+      .accordion > .card:not(:first-of-type) .card-header:first-child {
+        border-radius: 0; }
+      .accordion > .card:not(:first-of-type):not(:last-of-type) {
+        border-bottom: 0;
+        border-radius: 0; }
+      .accordion > .card:first-of-type {
+        border-bottom: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0; }
+      .accordion > .card:last-of-type {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0; }
+      .accordion > .card .card-header {
+        margin-bottom: -1px; }
+
+        #accordion .card {
+  margin-bottom: 5px;
+  border: 1px solid #f0f0f0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0; }
+  #accordion .card .card-header {
+    padding: 0;
+    background: transparent;
+    border-bottom: 1px solid #f0f0f0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0; }
+    #accordion .card .card-header a {
+      padding: 12px 20px;
+      display: block;
+      font-size: 20px;
+      font-weight: 500;
+      color: #000; }
+      #accordion .card .card-header a span {
+        float: right; }
+        #accordion .card .card-header a span i {
+          color: #38d39f; }
+
+#accordion .card-body {
+  border: 1px solid transparent; }
+  #accordion .card-body p {
+    color: #4d4d4d !important; }
+
+#accordion [aria-expanded="false"] > .expanded, #accordion [aria-expanded="true"] > .collapsed {
+  display: none; }
+
+  .block-8 .accordion-item .heading {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0; }
+  .block-8 .accordion-item .heading > a {
+    padding-left: 35px;
+    position: relative;
+    color: #000; }
+    .block-8 .accordion-item .heading > a:before {
+      width: 20px;
+      height: 20px;
+      line-height: 18px;
+      border: 1px solid #ccc;
+      text-align: center;
+      font-size: 18px;
+      top: .1em;
+      left: 0; }
+    .block-8 .accordion-item .heading > a[aria-expanded="true"]:before {
+      font-family: 'icomoon';
+      position: absolute;
+      content: "\e316";
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease;
+      background: #6927ff;
+      color: #fff;
+      border: 1px solid #6927ff; }
+    .block-8 .accordion-item .heading > a[aria-expanded="false"]:before {
+      content: "\e313";
+      color: #ccc;
+      font-family: 'icomoon';
+      position: absolute;
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease; }
+
+.block-8 .accordion-item .body-text {
+  font-size: 16px;
+  padding: 5px 0;
+  padding-left: 30px; }
