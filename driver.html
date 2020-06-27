@@ -177,7 +177,10 @@
             <h2 class="mb-4">Your Map</h2>
           </div>
         </div>
-
+        <div id="floating-panel">
+              <input type="button" value="Toggle visibility" onclick="overlay.toggle();"></input>
+              <input type="button" value="Toggle DOM attachment" onclick="overlay.toggleDOM();"></input>
+            </div>
         <div id="map"></div>
         <script src="js/google-map.js"></script>
         <script async defer
