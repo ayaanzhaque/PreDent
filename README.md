@@ -2,7 +2,7 @@
 
 # [PreDent](https://predent.netlify.app/)
 
-Using ML to promote safer driving
+Using ML to promote safer driving by predicting crash hotspots
 
 ## Overview of our Project
 
