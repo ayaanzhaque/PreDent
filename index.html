@@ -559,6 +559,8 @@
 
 
 
+
+
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
@@ -579,6 +581,35 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBWwVKSP6jtjqMhWyy_A7-bZ7Lnfg-1S9E",
+    authDomain: "predent-6bffd.firebaseapp.com",
+    databaseURL: "https://predent-6bffd.firebaseio.com",
+    projectId: "predent-6bffd",
+    storageBucket: "predent-6bffd.appspot.com",
+    messagingSenderId: "223772795649",
+    appId: "1:223772795649:web:ae935a64f4f97762d3f100",
+    measurementId: "G-GRHPN9CC2X"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+const auth  = firebase.auth()
+const db = firebase.firestore();
+
+db.settings({timestampsInSnapshots: true});
+
+</script>
 
   </body>
 </html>
