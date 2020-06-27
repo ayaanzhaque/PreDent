@@ -41,11 +41,50 @@
             <li class="nav-item"><a href="government.html" class="nav-link">Government</a></li>
             <li class="nav-item"><a href="consumer.html" class="nav-link">Consumer</a></li>
             <li class="nav-item"><a href="visualization.html" class="nav-link">Data Visualization</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" data-target = "modal-account">Account</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id = "logout">Logout</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"data-toggle="modal" data-target = "#exampleModal">Login</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"data-target = "modal-signup">Sign Up</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- END nav -->
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Email">
+              </div>
+            </form>
+          </div>
+
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
 
     <section class="home-slider ftco-degree-bg">
       <div class="slider-item">
@@ -55,7 +94,7 @@
             <div class="col-md-10 ftco-animate text-center">
               <h1 class="mb-4"> <strong> PreDent </strong>
               </h1>
-              <p>Using Machine Learning to Prevent Accidents before they happen</p>
+              <p>Using Machine Learning to promote safer driving.</p>
               <p> </p>
               <p><a href="government.html" class="btn btn-primary px-4 py-3"> Governments</a>
               <a href="government.html" class="btn btn-primary px-4 py-3"> Consumers</a></p>
@@ -107,7 +146,7 @@
               <div class="d-flex justify-content-center"><div class="icon color-1 d-flex justify-content-center mb-3"><span class="align-self-center icon-layers"></span></div></div>
               <div class="media-body p-2">
                 <h3 class="heading">The Problem</h3>
-                <p>Car accidents are a crucial issue currently present in our world today. Road crashes are  the leading cause of death for people less than 30.</p>
+                <p>Car accidents are a crucial issue currently present in our world today. Road crashes are  the leading cause of death among people aged 5-29.</p>
               </div>
             </div>
           </div>
@@ -124,8 +163,8 @@
             <div class="media block-6 services d-block text-center">
               <div class="d-flex justify-content-center"><div class="icon color-3 d-flex justify-content-center mb-3"><span class="align-self-center icon-paper-plane"></span></div></div>
               <div class="media-body p-2">
-                <h3 class="heading">Preparation</h3>
-                <p>It is important to be able to track which conditions make a road dangerous in order to help city planners adjust in the future.
+                <h3 class="heading">Prepare for Future</h3>
+                <p>It is important to be able to track which conditions make a road dangerous in order to help city planners adjust in the future.</p>
               </div>
             </div>
           </div>
@@ -143,24 +182,14 @@
       </div>
     </section>
 
-    <section class="ftco-section-parallax ftco-degree-bg">
-      <div class="parallax-img d-flex align-items-center">
-        <div class="container">
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-10 text-center heading-section heading-section-white ftco-animate">
-              <h2 class="h1 font-weight-bold">Turn every channel into a revenue channel and drive business growth</h2>
-              <p><a href="#" class="btn btn-primary btn-outline-white mt-3 py-3 px-4">View more details</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </section>
 
     <section class="ftco-section ftco-counter ftco-degree-bg" id="section-counter">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-            <h2>Road Crash Statistics</h2>
+            <h2>Road Accident Statistics</h2>
           </div>
         </div>
         <div class="row">
@@ -230,7 +259,7 @@
       </div>
     </section>
 
-    <!-- TEAMMMMMMMMMMM -->
+    <!-- TEAMMMMMMMMMM -->
 
   <section id="team" class="pb-5">
       <div class="container">
@@ -328,6 +357,24 @@
             <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
               <div class="block-18 text-center">
                 <div class="text">
+                  <strong class="number" data-number="3700">0</strong>
+                  <span>people lose their lives every day on the roads across the globe.</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18 text-center">
+                <div class="text">
+                  <strong class="number" data-number="900">0</strong>
+                  <span>billion dollars spent every year due to automotive accidents.</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18 text-center">
+                <div class="text">
+                  <strong class="number" data-number="9">0</strong>
+                  <span>leading cause of death in the world.</span>
                 </div>
               </div>
             </div>
