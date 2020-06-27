@@ -193,17 +193,26 @@
                   var textOne = a.options[a.selectedIndex].text;
                   if (textOne == "*Choose Location*") {
                   document.getElementById("htmlRandomNumber").textContent = "Your form is incomplete. Please fill out all fields before submitting.";
+                          document.getElementById("hometown").style.display = "block";
+                          document.getElementById("imagetown").style.display = "none";
                 } else if (textOne == "Salt Lake City, UT") {
-                  document.getElementById("htmlRandomNumber").textContent = "INPUT PICTURE FOR HERE";
+                  document.getElementById("imagetown").style.display = "block";
+                  document.getElementById("hometown").style.display = "none";
                 } else if (textOne == "San Jose, CA") {
                   document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
+                          document.getElementById("hometown").style.display = "block";
+                          document.getElementById("imagetown").style.display = "none";
                 } else if (textOne == "Los Angeles, CA") {
                   document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
+                          document.getElementById("hometown").style.display = "block";
+                          document.getElementById("imagetown").style.display = "none";
                 } else if (textOne == "Houston, TX") {
                   document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
+                          document.getElementById("hometown").style.display = "block";
+                          document.getElementById("imagetown").style.display = "none";
                 }
 
-        document.getElementById("hometown").style.display = "block";
+
 
 
 
@@ -215,11 +224,17 @@
 
               </form>
 
+
               <div id="hometown" style="display: none">
                 <br>
 
                                   <p class="hometown" id="htmlRandomNumber"></p>
                               </div>
+
+            <div id="imagetown" style="display: none">
+              <br>
+                <img src="images/accidentRiskMap.png" alt="Italian Trulli">
+                    </div>
 
           </div>
         </center>
@@ -234,7 +249,7 @@
 
       text-align: center;
       color: #000000;
-        background: #b1f587;
+      border: 1px solid red;
       display: block;
       }
 
