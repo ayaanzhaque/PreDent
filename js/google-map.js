@@ -1,51 +1,34 @@
 function initMap() {
-  var latArray = [-25.363, -25.463, -25.563];
-  var longArray = [131.044, 131.144, 131.244];
+
+var givenLatitude = parseInt(document.getElementById("forcedLatitude").value);
+var givenLongitude = parseInt(document.getElementById("forcedLongitude").value);
+
+var latArray = [40.7608, 40.8608];
+  longArray = [-111.8910, -111.9910];
+  var givenCenter = {lat: 40.7608, lng: -111.8910};
+
+
+latArray.push(givenLatitude);
+longArray.push(givenLongitude);
+
 
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 4,
-    center: {lat: -25.363, lng: 131.044}
+    zoom: 8,
+    center: givenCenter
   });
 
-for (var i = 0; i < 5; i++) {
-
-  var marker = new google.maps.Marker({
-    position: {lat: latArray[i], lng: longArray[i]},
-    map: map,
-    title: 'Hello World!',
-  });
-
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
-
+  for (i = 0; i < latArray.length; i++) {
+  placeMarker(latArray[i], longArray[i], map);
+  }
 
 }
 
-}
-
-function initMapOriginal() {
-  var latArray = [-25.363, -25.463, -25.563];
-  var longArray = [131.044, 131.144, 131.244];
-
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 4,
-    center: {lat: -25.363, lng: 131.044}
-  });
-
-for (var i = 0; i < 5; i++) {
-
-  var marker = new google.maps.Marker({
-    position: {lat: latArray[i], lng: longArray[i]},
-    map: map,
-    title: 'Hello World!',
-  });
-
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
 
 
-}
-
+function placeMarker(givenLat, givenLong, map) {
+    var marker = new google.maps.Marker({
+        position: {lat: givenLat, lng: givenLong},
+        map: map,
+        draggable:true
+    });
 }
