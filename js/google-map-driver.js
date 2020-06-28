@@ -48,7 +48,8 @@ function placeMarker(givenLat, givenLong, map, givenContent) {
         var marker = new google.maps.Marker({
             position: {lat: givenLat, lng: givenLong},
             map: map,
-            title: 'GIVEEEEN MEEEAAAPP'
+            title: 'GIVEEEEN MEEEAAAPP',
+            draggable:true
         });
 
         marker.addListener('click', function() {
