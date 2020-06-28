@@ -43,7 +43,7 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item active"><a href="government.html" class="nav-link">Government</a></li>
+            <li class="nav-item active"><a href="government.html" class="nav-link">Governments</a></li>
             <li class="nav-item"><a href="driver.html" class="nav-link">Drivers</a></li>
             <li class="nav-item"><a href="visualization.html" class="nav-link">Data Visualization</a></li>
                 <li class="nav-item dropdown">
@@ -193,8 +193,8 @@
             <div class="container">
               <div class="row justify-content-center mb-5">
                 <div class="col-md-7 text-center heading-section ftco-animate">
-                  <h2 class="mb-4"> View Your Generated Heatmap</h2>
-                  <p>Choose your city, we have run our model with your data and rendered a heatmap for you.</p>
+                  <h2 class="mb-4"> View your generated heatmaps</h2>
+                  <p>Please choose your city. We have rendered a heat map and an interactive heat map with the given data for this city.</p>
                   <hr>
                 </div>
               </div>
@@ -247,21 +247,28 @@
                   document.getElementById("htmlRandomNumber").textContent = "Your form is incomplete. Please fill out all fields before submitting.";
                           document.getElementById("hometown").style.display = "block";
                           document.getElementById("imagetown").style.display = "none";
+                          document.getElementById("mapAppear").style.display = "none";
                 } else if (textOne == "Salt Lake City, UT") {
                   document.getElementById("imagetown").style.display = "block";
+                  document.getElementById("mapAppear").style.display = "block";
                   document.getElementById("hometown").style.display = "none";
                 } else if (textOne == "San Jose, CA") {
                   document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
                           document.getElementById("hometown").style.display = "block";
                           document.getElementById("imagetown").style.display = "none";
+                          document.getElementById("mapAppear").style.display = "none";
                 } else if (textOne == "Los Angeles, CA") {
                   document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
                           document.getElementById("hometown").style.display = "block";
                           document.getElementById("imagetown").style.display = "none";
+                          document.getElementById("mapAppear").style.display = "none";
+
                 } else if (textOne == "Houston, TX") {
                   document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
                           document.getElementById("hometown").style.display = "block";
                           document.getElementById("imagetown").style.display = "none";
+                          document.getElementById("mapAppear").style.display = "none";
+
                 }
 
 
@@ -303,6 +310,21 @@
                 <p class="addingpthing">Look to the map below to see why we flagged locations as risky.</p>
                     </div>
 
+                    <div id="mapAppear" style="display: none">
+                      <div class="container">
+                        <div class="row justify-content-center mb-5 pb-3">
+                          <div class="col-md-7 text-center heading-section ftco-animate">
+                            <h2 class="mb-4">Your Map</h2>
+                          </div>
+                        </div>
+                        <div id="map"></div>
+                        <script src="js/google-map.js"></script>
+                        <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjWfWoYtAhvc6i9C4V5SekngUKeyXOYoc&callback=initMap">
+                        </script>
+                      </div>
+                            </div>
+
           </div>
         </center>
 
@@ -322,21 +344,6 @@
 
       </style>
 
-    </section>
-
-    <section class="ftco-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-            <h2 class="mb-4">Your Map</h2>
-          </div>
-        </div>
-        <div id="map"></div>
-        <script src="js/google-map.js"></script>
-        <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjWfWoYtAhvc6i9C4V5SekngUKeyXOYoc&callback=initMap">
-        </script>
-      </div>
     </section>
 
 
