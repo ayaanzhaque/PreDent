@@ -183,9 +183,33 @@
             </div>
             </div>
 <br><br>
-      <button class="btn btn-primary py-3 px-5" type="button" onClick="initMap()">Submit</button>
-    </form>
 
+    </form>
+    <button class="btn btn-primary py-3 px-5" type="button" onClick="submitCrashData()">Submit</button>
+
+<script>
+function submitCrashData() {
+                          document.getElementById("realCrashData").style.display = "block";
+
+}
+
+</script>
+
+<style>
+.crashDataStyle {
+
+text-align: center;
+color: #000000;
+border: 1px solid green;
+display: block;
+}
+</style>
+
+              <div id="realCrashData" style="display: none">
+
+                <br>
+<p class="crashDataStyle">Your information has been successfully submitted.</p>
+              </div>
 </center>
 
 
@@ -195,7 +219,6 @@
                 <div class="col-md-7 text-center heading-section ftco-animate">
                   <h2 class="mb-4"> View your Generated Heatmaps</h2>
                   <p>Please choose your city. We have rendered a heat map and an interactive heat map with the given data for this city.</p>
-                  <hr>
                 </div>
               </div>
             </div>
