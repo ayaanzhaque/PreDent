@@ -323,8 +323,33 @@
 
                 </div>
 
-      <button class="btn btn-primary py-3 px-5" type="button" onClick="initMap()">Submit</button>
     </form>
+
+    <button class="btn btn-primary py-3 px-5" type="button" onClick="submitCrashData()">Submit</button>
+
+<script>
+function submitCrashData() {
+                          document.getElementById("realCrashData").style.display = "block";
+
+}
+
+</script>
+
+<style>
+.crashDataStyle {
+
+text-align: center;
+color: #000000;
+border: 1px solid green;
+display: block;
+}
+</style>
+
+              <div id="realCrashData" style="display: none">
+
+                <br>
+<p class="crashDataStyle">Your information has been successfully submitted.</p>
+              </div>
 
 </center>
 <br><br>
