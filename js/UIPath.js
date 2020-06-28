@@ -40,3 +40,16 @@ robot.on('missing-components', [] => {console.log('Missing components')});
 class RobotProcess {
   start: (inArguments?: any) => JobPromise;
 }
+
+robot.getProcesses()
+.then(processes => {
+  let calculatorProcess = processes.find(p => p.name.includes("Calculator"))
+  let job = new Job(calculatorProcess.id, arguments);
+  robot.startJob(job).then(result => {
+    console.log(result.Sum);
+  }, err => {
+    console.log(err);
+  })
+}, err => {
+  console.log(err)
+}};
