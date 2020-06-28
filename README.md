@@ -4,6 +4,8 @@
 
 Using ML to promote safer driving by predicting crash hotspots
 
+Devpost: https://devpost.com/software/predent
+
 ## Overview of our Project
 
 PreDent is a unique progressive web application that identifies the accident-prone areas of a city through machine learning. The core of our project is an ML model that inputs static features (speed limits, road signs, road curvature, traffic volume), weather (precipitation, temperature), human factors, and many other attributes to ultimately output a map of city roads with hotspots of where collisions are likely. Note that our demo shows the process, but because our model is incredibly complex and large, the only way for us to deploy our model is to get access to expensive, high-powered servers. Our model will work on any city’s dataset, but they would have to be collected or provided to us.
