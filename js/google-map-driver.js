@@ -2,6 +2,7 @@ function initMap() {
 
 var givenLatitude = parseInt(document.getElementById("forcedLatitude").value);
 var givenLongitude = parseInt(document.getElementById("forcedLongitude").value);
+
 var weather = document.getElementById("forcedWeather").value;
 var speedLimit = document.getElementById("forcedSpeed").value;
 var roadSigns = document.getElementById("roadSignsS").value;
@@ -14,7 +15,7 @@ var contentString = '<div id="content">'+
             '<p><b>Weather:</b> ' + weather +
             '<p><b>Speed Limit:</b> ' + speedLimit +
             '<p><b>Road Signs:</b> '+ roadSigns +
-            '<p><b>Road Shape:</b> '+ roadShape + 
+            '<p><b>Road Shape:</b> '+ roadShape +
             '</div>';
 
 
