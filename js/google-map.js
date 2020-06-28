@@ -8,10 +8,10 @@ var longArray = [-111.965577, -111.949198, -111.949101, -111.949313, -111.948954
   -111.894109, -111.910951, -111.902568, -111.914381, -111.915209, -111.913635, -111.913138, -111.905964, -111.902885,
   -111.909470, -111.910643, -111.910571, -111.911181, -111.911145, -111.911588, -111.912618];
 
-var contentString = ['<h2>Wah.</h2>', '<h2>Waah.</h2>', '<h2>Waaah.</h2>', '<h2>Waaaaaaaah.</h2>', '<h2>Shaaaa</h2>', '<h2>Uluru</h2>',
-'<h2>Uluru</h2>', '<h2>Waaaaaaaah</h2>', '<h2>Waaaaaaaah</h2>', '<h2>Uluru</h2>', '<h2>Uluru</h2>', '<h2>Shaaaa</h2>', '<h2>Uluru</h2>',
-'<h2>Waaaaaaaah</h2>', '<h2>Uluru</h2>', '<h2>Shaaaa</h2>', '<h2>Uluru</h2>', '<h2>Shaaaa</h2>', '<h2>Uluru</h2>', '<h2>Shaaaa</h2>',
-'<h2>Waaaaaaaah</h2>', '<h2>Shaaaa</h2>', '<h2>Uluru</h2>', '<h2>Shaaaa</h2>'];
+var contentString = ['<h2>Speed Limit too high.</h2>', '<h2>Poor Signage.</h2>', '<h2>Poor Signage.</h2>', '<h2>Poor Signage.</h2>', '<h2>Low Visibility.</h2>', '<h2>Freezes during winter.</h2>',
+'<h2>Freezes during winter.</h2>', '<h2>Freezes during winter.</h2>', '<h2>Poor Oreintation.</h2>', '<h2>Risky Intersection.</h2>', '<h2>Low Visibility.</h2>', '<h2>Risky Intersection.</h2>', '<h2>Risky Intersection.</h2>',
+'<h2>High Traffic Volume.</h2>', '<h2>Speed Limit too high.</h2>', '<h2>High Traffic Volume.</h2>', '<h2>High Traffic Volume.</h2>', '<h2>Shaaaa</h2>', '<h2>Poor Signage.</h2>', '<h2>Poor Signage.</h2>',
+'<h2>Speed Limit too high.</h2>', '<h2>Speed Limit too high.</h2>', '<h2>Speed Limit too high.</h2>', '<h2>Speed Limit too high.</h2>'];
 
 var givenCenter = {lat: 40.765287, lng: -111.931735};
 
@@ -25,7 +25,7 @@ var givenCenter = {lat: 40.765287, lng: -111.931735};
   });
 
   for (i = 0; i < latArray.length; i++) {
-  placeMarker(latArray[i], longArray[i], map, contentString[0]);
+  placeMarker(latArray[i], longArray[i], map, contentString[i]);
   }
 
 }
