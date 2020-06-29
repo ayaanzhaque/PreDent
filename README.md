@@ -10,7 +10,7 @@ Using ML to promote safer driving by predicting crash hotspots
 
 **3rd Place Overall @ HackMann 2020**
 
-**Best Wep Application @ Macrohacks 2020**
+**Best Web Application @ Macrohacks 2020**
 
 **Sponsered Prize Winner @ Macrohacks 2020**
 
