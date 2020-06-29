@@ -4,7 +4,21 @@
 
 Using ML to promote safer driving by predicting crash hotspots
 
+**1st Place Overall @ MLH Summer League Data Day Grind 2020**
+
+**1st Place Overall @ MacroHacks 2020**
+
+**3rd Place Overall @ Hackmann 2020**
+
+**Best Wep Application @ Macrohacks 2020**
+
+**Sponsered Prize Winner @ Macrohacks 2020**
+
+
+
 Devpost: https://devpost.com/software/predent
+
+Demo: https://youtu.be/WoV-xuEERps
 
 ## Overview of our Project
 
