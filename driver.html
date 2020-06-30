@@ -46,7 +46,7 @@
             <li class="nav-item"><a href="government.html" class="nav-link"><b>Governments</b></a></li>
             <li class="nav-item active"><a href="driver.html" class="nav-link"><b>Drivers</b></a></li>
             <li class="nav-item"><a href="visualization.html" class="nav-link"><b>Data Visualization</b></a></li>
-                
+
           </ul>
         </div>
       </div>
@@ -149,7 +149,6 @@
               <div class="col-md-7 text-center heading-section ftco-animate">
                 <h2 class="mb-4">Hotspots in Your City</h2>
                 <p>Choose your city to find the crash hotspots in your city so you can make informed decisions. This is hourly updated and is accurate with the time of year.</p>
-                <hr>
               </div>
             </div>
           </div>
@@ -201,9 +200,9 @@
                         document.getElementById("imagetown").style.display = "none";
                         document.getElementById("mapAppear").style.display = "none";
               } else if (textOne == "Salt Lake City, UT") {
+                document.getElementById("hometown").style.display = "none";
                 document.getElementById("imagetown").style.display = "block";
                 document.getElementById("mapAppear").style.display = "block";
-                document.getElementById("hometown").style.display = "none";
               } else if (textOne == "San Jose, CA") {
                 document.getElementById("htmlRandomNumber").textContent = "We are still waiting to receive information from this city.";
                         document.getElementById("hometown").style.display = "block";
@@ -254,7 +253,7 @@
 
               <style>
               .addingpthing {
-                border: 1px solid green;
+                border: 1px solid purple;
               }
 
               </style>
@@ -285,7 +284,7 @@
     <div class="row justify-content-center mb-5 pb-5">
       <div class="col-md-7 text-center heading-section ftco-animate">
         <h2>Enter Details of Witnessed Accident</h2>
-        <p> Don't worry about being exact, once you place the pin you can drag it around to be more percise.</p>
+        <p>You don't have to be too exact; once you place the pin, you can drag it around to be more precise.</p>
       </div>
     </div>
   </div>
@@ -321,7 +320,23 @@
 
 <script>
 function submitCrashData() {
-                          document.getElementById("realCrashData").style.display = "block";
+
+  var latlat = document.getElementById("forcedLatitude").value;
+  var longlong = document.getElementById("forcedLongitude").value;
+
+  if (latlat == "") {
+    document.getElementById("captionCrashData").textContent = "Not all information was entered. Please fill out all the text boxes.";
+    document.getElementById("captionCrashData").style["border"] = "1px solid red";
+  } else if (longlong == "") {
+    document.getElementById("captionCrashData").textContent = "Not all information was entered. Please fill out all the text boxes.";
+    document.getElementById("captionCrashData").style["border"] = "1px solid red";
+  } else {
+    document.getElementById("captionCrashData").textContent = "Your information has been successfully submitted.";
+    document.getElementById("captionCrashData").style["border"] = "1px solid green";
+  }
+
+    document.getElementById("realCrashData").style.display = "block";
+
 
 }
 
@@ -337,14 +352,13 @@ display: block;
 }
 </style>
 
-              <div id="realCrashData" style="display: none">
+<div id="realCrashData" style="display: none">
 
-                <br>
-<p class="crashDataStyle">Your information has been successfully submitted.</p>
-              </div>
+  <br>
+<p id="captionCrashData" class="crashDataStyle">Your information has been successfully submitted.</p>
+</div>
 
 </center>
-<br><br>
 </section>
 
 

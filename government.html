@@ -188,12 +188,16 @@ function submitCrashData() {
 
   if (givenName == "") {
     document.getElementById("realCrashData").textContent = "Not all information was entered. Please fill out all the text boxes.";
+    document.getElementById("realCrashData").style["border"] = "1px solid red";
   } else if (givenEmail == "") {
     document.getElementById("realCrashData").textContent = "Not all information was entered. Please fill out all the text boxes.";
+    document.getElementById("realCrashData").style["border"] = "1px solid red";
   } else if (givenCity == "") {
     document.getElementById("realCrashData").textContent = "Not all information was entered. Please fill out all the text boxes.";
+    document.getElementById("realCrashData").style["border"] = "1px solid red";
   } else {
     document.getElementById("realCrashData").textContent = "Your information has been successfully submitted.";
+    document.getElementById("realCrashData").style["border"] = "1px solid green";
   }
 
   document.getElementById("realCrashData").style.display = "block";
@@ -214,13 +218,12 @@ display: block;
 
 </style>
 
-              <div id="realCrashData" class="crashDataStyle" style="display: none">
+<div id="realCrashData" class="crashDataStyle" style="display: none">
 
-                <br>
 <p id="crashDataReal" class="crashDataStyle">Your information has been successfully submitted.</p>
               </div>
 </center>
-
+</section>
 
       <section class="ftco-section bg-white">
             <div class="container">
