@@ -9,8 +9,8 @@ var longArray = [-111.965577, -111.949198, -111.949101, -111.949313, -111.948954
   -111.909470, -111.910643, -111.910571, -111.911181, -111.911145, -111.911588, -111.912618];
 
 var contentString = ['<h2>Speed Limit too high.</h2>', '<h2>Poor Signage.</h2>', '<h2>Poor Signage.</h2>', '<h2>Poor Signage.</h2>', '<h2>Low Visibility.</h2>', '<h2>Freezes during winter.</h2>',
-'<h2>Freezes during winter.</h2>', '<h2>Freezes during winter.</h2>', '<h2>Poor Oreintation.</h2>', '<h2>Risky Intersection.</h2>', '<h2>Low Visibility.</h2>', '<h2>Risky Intersection.</h2>', '<h2>Risky Intersection.</h2>',
-'<h2>High Traffic Volume.</h2>', '<h2>Speed Limit too high.</h2>', '<h2>High Traffic Volume.</h2>', '<h2>High Traffic Volume.</h2>', '<h2>Shaaaa</h2>', '<h2>Poor Signage.</h2>', '<h2>Poor Signage.</h2>',
+'<h2>Freezes during winter.</h2>', '<h2>Freezes during winter.</h2>', '<h2>Poor Orientation.</h2>', '<h2>Risky Intersection.</h2>', '<h2>Low Visibility.</h2>', '<h2>Risky Intersection.</h2>', '<h2>Risky Intersection.</h2>',
+'<h2>High Traffic Volume.</h2>', '<h2>Speed Limit too high.</h2>', '<h2>High Traffic Volume.</h2>', '<h2>High Traffic Volume.</h2>', '<h2>High Traffic Volume.</h2>', '<h2>Poor Signage.</h2>', '<h2>Poor Signage.</h2>',
 '<h2>Speed Limit too high.</h2>', '<h2>Speed Limit too high.</h2>', '<h2>Speed Limit too high.</h2>', '<h2>Speed Limit too high.</h2>'];
 
 var givenCenter = {lat: 40.765287, lng: -111.931735};
