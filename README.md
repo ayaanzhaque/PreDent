@@ -4,6 +4,18 @@
 
 Using ML to promote safer driving by predicting crash hotspots
 
+- **1st Place Overall @ MLH Summer League Data Day Grind 2020**
+-
+- **1st Place Overall @ MacroHacks 2020**
+-
+- **2nd Place Overall @ PlatHacks 2020**
+-
+- **3rd Place Overall @ HackMann 2020**
+-
+- **Best Web Apllication @ MacroHakcs 2020**
+-
+- **Sponsored Prize Winner @ MacroHacks 2020**
+
 Demo: https://www.youtube.com/watch?v=LvzHXBrzpWo
 
 ## Overview of our Project
