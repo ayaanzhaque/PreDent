@@ -35,7 +35,7 @@
   "deprecated": false,
   "description": "A logger package for use in the Firebase JS SDK",
   "devDependencies": {
-    "rollup": "2.7.6",
+    "rollup": "3.29.5",
     "rollup-plugin-typescript2": "0.27.0",
     "typescript": "3.8.3"
   },
